@@ -16,6 +16,48 @@ body{
     width: 100%;
     overflow-x: hidden;
 }
+.container{
+  width: 85%;
+  margin: auto;
+}
+.banner{
+  background-color: #212529;
+  color: white;
+  text-align: start;
+  border-radius: 7px;
+  width: 100%;
+  margin: auto;
+}
+.banner__content{
+  width: 50%;
+  padding: 20px;
+  margin: 20px 0;
+}
+.banner__title{
+  font-family: "Playfair Display", Georgia, "Times New Roman", serif;
+    font-size: 50px;
+    font-weight: bold;
+    font-style: italic;
+    line-height: 60px;
+}
+.banner__paragraph{
+  font-family: var(--bs-font-sans-serif);
+    font-style: normal;
+    font-size: 17px;
+    font-weight: normal;
+}
+p{
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+.banner__continue{
+  font-weight: bold;
+    color: white;
+    text-decoration: underline;
+}
 .blog__heading{
   text-decoration: underline;
     text-align: center;
