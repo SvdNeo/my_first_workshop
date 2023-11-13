@@ -37,6 +37,19 @@ body{
   padding-right: 20px;
   color: #6c757d;
 }
+.blog__signup{
+  border-radius: 0.3rem;
+  padding: 7px;
+  font-size: .896rem;
+  color: #6c757d;
+  background-color: white;
+  border-width: 0.1rem;
+  padding-right: 10px;
+}
+.nav__navigation{
+  display: flex;
+  justify-content: space-between;
+}
 .container{
   width: 85%;
 margin: auto;
