@@ -1,0 +1,32 @@
+// Variables
+$main-bg-color: #2380a7;
+$button-bg-color: #4caf50;
+
+// Header styles
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: $main-bg-color;
+    color: white;
+
+    // Subscribe and SignUp buttons
+    .subscribe-btn, .signup-btn {
+        padding: 8px 16px;
+        background-color: $button-bg-color;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+
+
+    // Search icon style
+    .search-icon {
+        width: 20px; // Adjust the width of the search icon
+        height: 20px; // Adjust the height of the search icon
+        margin: 0 5px;
+    }
+}

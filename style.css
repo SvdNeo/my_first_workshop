@@ -1,0 +1,21 @@
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: #2380a7;
+  color: white;
+}
+header .subscribe-btn, header .signup-btn {
+  padding: 8px 16px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+header .search-icon {
+  width: 20px;
+  height: 20px;
+  margin: 0 5px;
+}/*# sourceMappingURL=style.css.map */
