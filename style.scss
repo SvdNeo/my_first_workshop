@@ -214,33 +214,34 @@ a {
 	margin-bottom: 2.5px;
 	font-size: 33px;
 	font-weight: bolder;
+    &__date {
+        margin-bottom: 1.25rem;
+        color: $color_7;
+    }
+    &__head2 {
+        font-size: 26px;
+        font-weight: bolder;
+        line-height: 30px;
+    }
+    &__blockquote {
+        font-size: 20px;
+        font-weight: 100;
+    }
+    &__table {
+        display: table;
+        border-collapse: separate;
+        box-sizing: border-box;
+        text-indent: initial;
+        border-spacing: 2px;
+        border-color: $border-color_2;
+        caption-side: bottom;
+        color: $color_2;
+        width: 100%;
+        margin-bottom: 1px;
+        vertical-align: top;
+    }
 }
-.post__date {
-	margin-bottom: 1.25rem;
-	color: $color_7;
-}
-.post__head2 {
-	font-size: 26px;
-	font-weight: bolder;
-	line-height: 30px;
-}
-.post__blockquote {
-	font-size: 20px;
-	font-weight: 100;
-}
-.post__table {
-	display: table;
-	border-collapse: collapse;
-	box-sizing: border-box;
-	text-indent: initial;
-	border-spacing: 2px;
-	border-color: $border-color_2;
-	caption-side: bottom;
-	color: $color_2;
-	width: 100%;
-	margin-bottom: 1px;
-	vertical-align: top;
-}
+
 thead {
 	display: table-header-group;
 	vertical-align: middle;
@@ -251,22 +252,29 @@ tr {
 	vertical-align: inherit;
 	border-color: $border-color_3;
 }
-.navbutton__old {
-	background-color: $background-color_5;
-	padding: 10px 20px;
-	border-radius: 2rem;
-	border-color: $border-color_4;
-	border-width: 1px;
-	color: $color_4;
-}
-.navbutton__nevr {
-	background-color: $background-color_3;
-	padding: 10px 20px;
-	border-radius: 2rem;
-	border-color: $border-color_5;
-	color: $color_3;
-	border-width: 1px;
-}
+.navbutton {
+    &__old,
+    &__new {
+      background-color: transparent;
+      padding: 10px 20px;
+      border-radius: 2rem;
+      border-width: 1px;
+      font-weight: bold;
+    }
+  
+    &__old {
+      background-color: $background-color_5;
+      border-color: $border-color_4;
+      color: $color_4;
+    }
+  
+    &__new {
+      background-color: $background-color_3;
+      border-color: $border-color_5;
+      color: $color_3;
+    }
+  }
+  
 .details {
 	padding-right: 0px;
 	padding-left: 50px;
@@ -279,15 +287,16 @@ tr {
 	margin-bottom: 1rem;
 	padding-right: 80px;
 	background-size: 100px;
+    &__head {
+        font-style: italic;
+        font-size: 23px;
+        margin-top: 0;
+        margin-bottom: 0.5rem;
+        font-weight: 900;
+        line-height: 1.2;
+    }
 }
-.about__head {
-	font-style: italic;
-	font-size: 23px;
-	margin-top: 0;
-	margin-bottom: 0.5rem;
-	font-weight: 900;
-	line-height: 1.2;
-}
+
 .archieve__list {
 	list-style: none;
 	line-height: 25px;

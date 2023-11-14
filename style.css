@@ -202,26 +202,22 @@ a:-webkit-any-link {
   font-size: 33px;
   font-weight: bolder;
 }
-
-.post__date {
+.post__head__date {
   margin-bottom: 1.25rem;
   color: #727272;
 }
-
-.post__head2 {
+.post__head__head2 {
   font-size: 26px;
   font-weight: bolder;
   line-height: 30px;
 }
-
-.post__blockquote {
+.post__head__blockquote {
   font-size: 20px;
   font-weight: 100;
 }
-
-.post__table {
+.post__head__table {
   display: table;
-  border-collapse: collapse;
+  border-collapse: separate;
   box-sizing: border-box;
   text-indent: initial;
   border-spacing: 2px;
@@ -245,22 +241,22 @@ tr {
   border-color: inherit;
 }
 
+.navbutton__old, .navbutton__new {
+  background-color: transparent;
+  padding: 10px 20px;
+  border-radius: 2rem;
+  border-width: 1px;
+  font-weight: bold;
+}
 .navbutton__old {
   background-color: #dee2e6;
-  padding: 10px 20px;
-  border-radius: 2rem;
   border-color: #0d6efd;
-  border-width: 1px;
   color: #0d6efd;
 }
-
-.navbutton__nevr {
+.navbutton__new {
   background-color: white;
-  padding: 10px 20px;
-  border-radius: 2rem;
   border-color: #6c757d;
   color: #6c757d;
-  border-width: 1px;
 }
 
 .details {
@@ -277,7 +273,6 @@ tr {
   padding-right: 80px;
   background-size: 100px;
 }
-
 .about__head {
   font-style: italic;
   font-size: 23px;
