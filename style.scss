@@ -1,14 +1,21 @@
 $color_1: white;
 $color_2: #212529;
 $color_3: #6c757d;
+$color_4: #727272;
+$color_5: #0d6efd;
 $font-family_1: sans-serif;
 $font-family_2: "Playfair Display", Georgia, "Times New Roman", serif;
 $font-family_3: var(--bs-font-sans-serif);
-$font-family_4: 'Times New Roman', Times, serif;
+$font-family_4: "Times New Roman", Times, serif;
 $background-color_1: #fff;
 $background-color_2: #212529;
 $background-color_3: white;
+$background-color_4: #dee2e6;
+$border-color_1: #dee2e6;
+$border-color_2: #0d6efd;
+$border-color_3: #6c757d;
 
+/*# sourceMappingURL=style.css.map */
 body {
 	margin: auto;
 	font-size: 1rem;
@@ -16,6 +23,8 @@ body {
 	font-weight: 400;
 	background-color: $background-color_1;
 	box-sizing: border-box;
+	-webkit-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
 	text-size-adjust: 100%;
 	scrollbar-highlight-color: transparent;
 	line-height: 1.5;
@@ -40,25 +49,36 @@ body {
 	border-radius: 7px;
 	width: 100%;
 	margin: auto;
+    &__content {
+        width: 50%;
+        padding: 20px;
+        margin: 20px 0;
+        &--active{
+            color: #212529;
+        }
+    }
+    &__title {
+        font-family: $font-family_2;
+        font-size: 50px;
+        font-weight: bold;
+        font-style: italic;
+        line-height: 60px;
+    }
+    &__paragraph {
+        font-family: $font-family_3;
+        font-style: normal;
+        font-size: 17px;
+        font-weight: normal;
+    }
+    &__continue {
+        font-weight: bold;
+        color: $color_1;
+        text-decoration: underline;
+    }
 }
-.banner__content {
-	width: 50%;
-	padding: 20px;
-	margin: 20px 0;
-}
-.banner__title {
-	font-family: $font-family_2;
-	font-size: 50px;
-	font-weight: bold;
-	font-style: italic;
-	line-height: 60px;
-}
-.banner__paragraph {
-	font-family: $font-family_3;
-	font-style: normal;
-	font-size: 17px;
-	font-weight: normal;
-}
+
+
+
 p {
 	display: block;
 	margin-block-start: 1em;
@@ -66,17 +86,26 @@ p {
 	margin-inline-start: 0px;
 	margin-inline-end: 0px;
 }
-.banner__continue {
-	font-weight: bold;
-	color: $color_1;
-	text-decoration: underline;
-}
+
 .blog__heading {
 	text-decoration: underline;
 	text-align: center;
 	font-family: $font-family_4;
 	color: $color_2;
 	font-size: 2.25rem;
+    &__searchsignup {
+        display: flex;
+        flex-direction: row;
+    }
+    &__signup {
+        border-radius: 0.3rem;
+        padding: 7px;
+        font-size: 0.896rem;
+        color: $color_3;
+        background-color: $background-color_3;
+        border-width: 0.1rem;
+        padding-right: 10px;
+    }
 }
 .link {
 	color: $color_3;
@@ -84,23 +113,12 @@ p {
 	cursor: pointer;
 	text-decoration: underline;
 }
-.blog__searchsignup {
-	display: flex;
-	flex-direction: row;
-}
+
 .link1 {
 	padding-right: 20px;
 	color: $color_3;
 }
-.blog__signup {
-	border-radius: 0.3rem;
-	padding: 7px;
-	font-size: .896rem;
-	color: $color_3;
-	background-color: $background-color_3;
-	border-width: 0.1rem;
-	padding-right: 10px;
-}
+
 .nav__navigation {
 	display: flex;
 	justify-content: space-between;
@@ -111,4 +129,59 @@ p {
 	justify-content: space-between;
 	align-items: center;
 	flex-wrap: wrap;
+}
+.bodyhead1 {
+	font-style: italic;
+	border-bottom: 1px solid #dee2e6;
+	padding-bottom: 1.5rem;
+	margin-bottom: 1.5rem;
+	font-weight: 550;
+	margin-top: 1.2;
+	line-height: 1;
+	font-size: 28px;
+}
+.post__head {
+	margin-bottom: 2.5px;
+	font-size: 33px;
+	font-weight: bolder;
+	margin-bottom: 2.5px;
+	font-size: 26px;
+	line-height: 30px;
+}
+.post__date {
+	margin-bottom: 1.25rem;
+	color: $color_4;
+}
+.post__blockquote {
+	font-size: 20px;
+	font-weight: 100;
+}
+.post__table {
+	display: table;
+	border-collapse: collapse;
+	box-sizing: border-box;
+	text-indent: initial;
+	border-spacing: 2px;
+	border-color: $border-color_1;
+	caption-side: bottom;
+	color: $color_2;
+	width: 100%;
+	margin-bottom: 1px;
+	vertical-align: top;
+}
+.navbutton__old {
+	background-color: $background-color_4;
+	padding: 10px 20px;
+	border-radius: 2rem;
+	border-color: $border-color_2;
+	border-width: 1px;
+	color: $color_5;
+}
+.navbutton__nevr {
+	background-color: $background-color_3;
+	padding: 10px 20px;
+	border-radius: 2rem;
+	border-color: $border-color_3;
+	color: $color_3;
+	border-width: 1px;
 }
