@@ -3,11 +3,22 @@ $myColor: red;
 $myFontSize: 38px;
 $myWidth: 680px;
 
-body {
-  font-family: $myFont;
-  font-size: $myFontSize;
-  color: $myColor;
+
+
+p{
+    $myColor: green !global;
+    color: $myColor;
 }
+body {
+    font-family: $myFont;
+    font-size: $myFontSize;
+    
+    color: $myColor;
+  }
+h3{
+    
+    color: $myColor;
+  }
 
 #container {
   width: $myWidth;
